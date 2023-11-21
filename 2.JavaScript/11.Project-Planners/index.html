@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script defer src="./script/sorting.js"></script>
+    <script defer type="module" src="script/drag.js"></script>
+    <script defer type="module" src="script/createInput.js"></script>
+    <script defer type="module" src="script/createButton.js"></script>
+    <script defer type="module" src="script/form-add-list.js"></script>
+    <script defer type="module" src="script/form-add-task.js"></script>
+    <!-- <script defer type="module" src="script/date.js"></script> -->
+
+    <title>Document</title>
+    <link rel="stylesheet" href="./dist/style.css" />
+  </head>
+  <body>
+    <!-- Header start -->
+    <header>
+      <div
+        class="flex items-center flex-shrink-0 w-full h-16 px-10 bg-white bg-opacity-75"
+      >
+        <svg
+          fill="#241f31"
+          xmlns="http://www.w3.org/2000/svg"
+          width="45px"
+          height="45px"
+          viewBox="0 0 52.00 52.00"
+          enable-background="new 0 0 52 52"
+          xml:space="preserve"
+          transform="matrix(1, 0, 0, 1, 0, 0)"
+          stroke="#241f31"
+        >
+          <g id="SVGRepo_bgCarrier" stroke-width="0">
+            <rect
+              x="0"
+              y="0"
+              width="52.00"
+              height="52.00"
+              rx="26"
+              fill="#9141ac"
+              strokewidth="0"
+            ></rect>
+          </g>
+          <g
+            id="SVGRepo_tracerCarrier"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          ></g>
+          <g id="SVGRepo_iconCarrier">
+            <path
+              d="M32,17.5c0-0.8-0.7-1.5-1.5-1.5h-9c-0.8,0-1.5,0.7-1.5,1.5v27c0,0.8,0.7,1.5,1.5,1.5h9 c0.8,0,1.5-0.7,1.5-1.5V17.5z"
+            ></path>
+            <path
+              d="M14,17.5c0-0.8-0.7-1.5-1.5-1.5h-9C2.7,16,2,16.7,2,17.5v31C2,49.3,2.7,50,3.5,50h9c0.8,0,1.5-0.7,1.5-1.5 V17.5z"
+            ></path>
+            <path
+              d="M50,17.5c0-0.8-0.7-1.5-1.5-1.5h-9c-0.8,0-1.5,0.7-1.5,1.5v23c0,0.8,0.7,1.5,1.5,1.5h9 c0.8,0,1.5-0.7,1.5-1.5V17.5z"
+            ></path>
+            <path
+              d="M50,3.5C50,2.7,49.3,2,48.5,2h-45C2.7,2,2,2.7,2,3.5v5C2,9.3,2.7,10,3.5,10h45c0.8,0,1.5-0.7,1.5-1.5V3.5z"
+            ></path>
+          </g>
+        </svg>
+        <div class="ml-10">
+          <a
+            class="mx-2 text-sm font-semibold text-gray-600 hover:text-indigo-700"
+            href="#"
+            >Projects</a
+          >
+          <a
+            class="mx-2 text-sm font-semibold text-gray-600 hover:text-indigo-700"
+            href="#"
+            >Team</a
+          >
+          <a
+            class="mx-2 text-sm font-semibold text-gray-600 hover:text-indigo-700"
+            href="#"
+            >Activity</a
+          >
+        </div>
+        <div class="px-10 m-auto">
+          <h1 class="text-2xl font-bold text-center">Project Planner</h1>
+        </div>
+        <div
+          class="flex items-center justify-center w-8 h-8 ml-auto overflow-hidden rounded-full cursor-pointer"
+        >
+          <img src="assets/icons/cerf.jpeg" alt="" />
+        </div>
+      </div>
+    </header>
+    <!-- Header End -->
+
+    <!-- Main start -->
+    <main
+      class="flex flex-col w-screen h-screen overflow-auto text-gray-900 bg-gradient-custom"
+    >
+      <!-- Modal Start -->
+      <div id="cartModal"></div>
+      <!-- Modal End -->
+      <!-- dropdown -->
+      <div class="dropdown">
+        <select id="dropdown1" onchange="handleDropdownChange(this)">
+          <option value="option1" selected>To do</option>
+          <option value="option2">Doing</option>
+          <option value="option3">Done</option>
+        </select>
+        <select id="dropdown2" onchange="handleDropdownChange(this)">
+          <option value="option4" selected>URGENT</option>
+          <option value="option5">Date</option>
+          <option value="option6">Name</option>
+        </select>
+      </div>
+    </main>
+    <!-- Main end -->
+    <footer>
+      <p class="flex justify-center text-gray-900">
+        Copyright Bastien.V, Carole.G et Valentin.L
+      </p>
+    </footer>
+  </body>
+</html>

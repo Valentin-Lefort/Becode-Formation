@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/assets/weather-be2ca94e.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <script type="module" crossorigin src="/assets/index-526017b1.js"></script>
+    <link rel="stylesheet" href="/assets/index-5286b0ca.css">
+  </head>
+  <body class="bg-slate-700 text-white w-screen">
+    <div class="flex justify-center mt-4">
+      <input
+        id="cityInput"
+        class="text-black text-center"
+        type="text"
+        placeholder="Put a City Name"
+      />
+    </div>
+    <div id="container" class="flex justify-center w-1/3 m-auto mb-3 mt-3">
+      <img src="" class="weatherLogo" />
+      <div class="flex flex-col text-center justify-center">
+        <span id="city"></span><br />
+        <span id="nowTemp"></span> <br />
+        <span id="minTemp"></span> <br />
+        <span id="maxTemp"></span><br />
+        <span id="humidity"></span><br />
+        <span id="wind"></span>
+      </div>
+    </div>
+    <div
+      id="forecastContainer"
+      class="flex flex-row justify-center justify-evenly"
+    ></div>
+    
+    
+  </body>
+</html>

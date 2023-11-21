@@ -1,0 +1,33 @@
+button{
+  border: none;
+  background-color: none;
+  border-radius: 0.5em;
+  padding: 0.5em 1em;
+  font-family: 'kanit', sans-serif;
+  cursor: pointer;
+  background-color: #D4ADFC;
+
+}
+.btn{
+  &:hover{
+    box-shadow: 0 0 10px lightgray;
+    transition-duration: 1500ms;
+  }
+
+  &-edit{
+    margin-top: 2em;
+    width: 60%;
+  }
+
+  
+  &-post{
+    margin-top: 3em;
+    width: 60%;
+  }
+
+  &-delete{
+    background-color: rgb(180, 7, 7);
+    margin-left: 0.5em;
+  }
+
+}
