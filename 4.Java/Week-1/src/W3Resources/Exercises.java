@@ -126,5 +126,6 @@ public class Exercises {
     }
     
     // 18. Write a Java program to multiply two binary numbers.
+    long binary3, binary4, multiply = 0;
   }
 }
