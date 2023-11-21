@@ -1,0 +1,86 @@
+@import "Variables/_variables.scss";
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 25px;
+  background-color: $color-gray;
+  max-width: 100%;
+  width: auto;
+  flex-direction: column;
+  gap: 24px;
+}
+.tim{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: $color-white;
+  width: 400px;
+  text-align: center;
+  flex-direction: column;;
+  .pic{img {border-radius: 50%;}}
+  .title{
+    color:$color-red;
+    font-family: 'Open Sans', sans-serif;}
+  .link{
+    background-color: $color-red;
+    padding: 15px;
+    border-radius: 10%;
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: $color-white;
+    font-family: 'Open Sans', sans-serif;}
+  li{
+    display: flex;
+    flex-direction: column;
+    color: $color-gray;
+    gap: 10px;
+    margin-top: 10px;
+    a{text-decoration: none;
+    color: $color-gray;
+    margin-bottom: 10px;}
+  }
+  p{color:$color-darkgray}
+  span{background-color: $color-gray;}
+}
+
+
+@media only screen and (min-width:768px){
+  .tim{width: 80%;}
+  .list{display: flex;
+    flex-direction: row;
+  justify-content: space-evenly;}
+  
+}
+@media only screen and (min-width:1024px){
+  .tim{width: 80%;}
+  .space{
+    display: flex;
+    flex-direction: row;
+    div{
+    display: flex;
+    flex-direction: column;
+  }
+}
+.hulot{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  div{
+  
+  display: flex;
+  flex-direction: column;
+}
+}
+.alien{
+  display: flex;
+  flex-direction: row;
+  div{
+  display: flex;
+  flex-direction: column;
+}
+}
+
+}

@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap");
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 25px;
+  background-color: gray;
+  max-width: 100%;
+  width: auto;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.tim {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  width: 400px;
+  text-align: center;
+  flex-direction: column;
+}
+.tim .pic img {
+  border-radius: 50%;
+}
+.tim .title {
+  color: red;
+  font-family: "Open Sans", sans-serif;
+}
+.tim .link {
+  background-color: red;
+  padding: 15px;
+  border-radius: 10%;
+  margin-bottom: 10px;
+  text-decoration: none;
+  color: white;
+  font-family: "Open Sans", sans-serif;
+}
+.tim li {
+  display: flex;
+  flex-direction: column;
+  color: gray;
+  gap: 10px;
+  margin-top: 10px;
+}
+.tim li a {
+  text-decoration: none;
+  color: gray;
+  margin-bottom: 10px;
+}
+.tim p {
+  color: #706e6e;
+}
+.tim span {
+  background-color: gray;
+}
+
+@media only screen and (min-width: 768px) {
+  .tim {
+    width: 80%;
+  }
+  .list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .tim {
+    width: 80%;
+  }
+  .space {
+    display: flex;
+    flex-direction: row;
+  }
+  .space div {
+    display: flex;
+    flex-direction: column;
+  }
+  .hulot {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+  }
+  .hulot div {
+    display: flex;
+    flex-direction: column;
+  }
+  .alien {
+    display: flex;
+    flex-direction: row;
+  }
+  .alien div {
+    display: flex;
+    flex-direction: column;
+  }
+}/*# sourceMappingURL=style.css.map */

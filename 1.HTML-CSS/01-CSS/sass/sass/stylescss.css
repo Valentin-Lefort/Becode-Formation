@@ -1,0 +1,147 @@
+/* Colors */
+body {
+  font: 100% "Space Mono", monospace;
+  color: #6b717f;
+  margin: 0;
+  padding: 16px;
+  background-color: #fff;
+  overflow-x: hidden;
+}
+
+main {
+  padding: 0 16px;
+}
+
+article {
+  display: flex;
+  flex-wrap: wrap;
+}
+article #selling-points {
+  flex-grow: 2;
+  flex-basis: 100%;
+}
+article section {
+  flex-grow: 1;
+  flex-basis: 45%;
+  border: 1px #8C8C8C solid;
+  box-shadow: 10px 10px 15px -4px #6b717f;
+  padding: 16px;
+  margin: 16px;
+  clear: both;
+  overflow: auto;
+  box-sizing: border-box;
+}
+article section code {
+  background: #000;
+  border: 1px solid #6b717f;
+  color: #8C8C8C;
+  page-break-inside: avoid;
+  font-family: monospace;
+  font-size: 15px;
+  line-height: 1.6;
+  margin-bottom: 1.6em;
+  max-width: 100%;
+  overflow: auto;
+  padding: 16px;
+  display: block;
+  word-wrap: break-word;
+}
+article section code .before {
+  float: left;
+  width: 40%;
+}
+article section code .after {
+  float: right;
+  width: 40%;
+}
+
+h1, h2, h3 {
+  color: #BF4080;
+}
+
+h1 {
+  text-align: center;
+}
+
+/*h3 {
+  text-align: center;
+  font-size: 1.5em;
+  padding: 32px;
+  margin-bottom: 0px;
+}*/
+.messages, .messages .success, .messages .warning, .messages .error {
+  padding: 16px;
+}
+.messages .success, .messages .warning, .messages .error {
+  border: 1px solid #8C8C8C;
+  color: #fff;
+  background-color: green;
+  box-shadow: 10px 10px 15px -4px #6b717f;
+}
+.messages .error {
+  background-color: red;
+}
+.messages .error:hover {
+  background-color: green;
+}
+.messages .warning {
+  background-color: orange;
+}
+
+footer h3 {
+  text-align: center;
+  font-size: 1.5em;
+  padding: 32px;
+  margin-bottom: 0px;
+  /*color: $color-pink;*/
+}
+
+li:nth-child(1n+1) {
+  background-color: #c5538d;
+  color: #0d0d0d;
+}
+
+li:nth-child(1n+2) {
+  background-color: #cc6699;
+  color: #1a1a1a;
+}
+
+li:nth-child(1n+3) {
+  background-color: #d279a6;
+  color: #262626;
+}
+
+li:nth-child(1n+4) {
+  background-color: #d98cb3;
+  color: #333333;
+}
+
+li:nth-child(1n+5) {
+  background-color: #dfa0c0;
+  color: #404040;
+}
+
+li:nth-child(1n+6) {
+  background-color: #e5b3cc;
+  color: #4d4d4d;
+}
+
+/*.success {
+  background-color: $color-green;
+}
+
+.error {
+  background-color: $color-red;
+}
+
+.warning {
+  background-color: $color-orange;
+}*/
+/*.messages {
+  padding: 16px;
+}*/
+/*.success, .error, .warning {
+  border: 1px solid $color-light-gray;
+  padding: 16px;
+  color: $color-white;
+}*//*# sourceMappingURL=stylescss.css.map */

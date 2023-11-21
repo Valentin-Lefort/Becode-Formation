@@ -1,0 +1,136 @@
+/* Colors */
+@import "_variables.scss";
+
+@mixin boxshadow {
+  -webkit-box-shadow: 10px 10px 15px -4px $color-light-blue;
+  -moz-box-shadow: 10px 10px 15px -4px $color-light-blue;
+  box-shadow: 10px 10px 15px -4px $color-light-blue;
+}
+
+body {
+  font: 100% "Space Mono", monospace;
+  color: $color-light-blue;
+  margin: 0;
+  padding: $padding;
+  background-color: $color-white;
+  overflow-x: hidden;
+}
+
+main {
+  padding: 0 $padding;
+}
+
+article{
+  display: flex;
+  flex-wrap: wrap;
+  #selling-points{    
+    flex-grow: 2;
+    flex-basis: 100%;
+  }
+  section{
+    flex-grow: 1;
+    flex-basis: 45%;
+    border: 1px $color-light-gray solid;
+    @include boxshadow;
+    padding: $padding;
+    margin: 16px;
+    clear: both;
+    overflow: auto;
+    box-sizing: border-box;
+    code{
+      background: $color-black;
+      border: 1px solid $color-light-blue;
+      color: $color-light-gray;
+      page-break-inside: avoid;
+      font-family: monospace;
+      font-size: 15px;
+      line-height: 1.6;
+      margin-bottom: 1.6em;
+      max-width: 100%;
+      overflow: auto;
+      padding: $padding;
+      display: block;
+      word-wrap: break-word;
+      .before{
+        float: left;
+        width: 40%;
+      }
+      .after{
+        float: right;
+        width: 40%;
+      }
+    }
+  }
+}
+
+h1, h2, h3 {
+    color:$color-pink;
+}
+
+h1 {
+  text-align: center;
+}
+
+/*h3 {
+  text-align: center;
+  font-size: 1.5em;
+  padding: 32px;
+  margin-bottom: 0px;
+}*/
+
+.messages{
+  padding: $padding;
+  .success {
+    @extend .messages;
+    border: 1px solid $color-light-gray;
+    color: $color-white;
+    background-color: $color-green;
+    @include boxshadow;
+  }
+  .error{
+    background-color: $color-red;
+    @extend .success;
+    &:hover{background-color:$color-green}
+  }
+  .warning{
+    @extend .success;
+    background-color: $color-orange;
+  }
+}
+footer{
+  h3{
+    text-align: center;
+    font-size: 1.5em;
+    padding: 2*$padding;
+    margin-bottom: 0px;
+    /*color: $color-pink;*/
+  }
+}
+@for $i from 1 through 6{
+  li:nth-child(1n + #{$i}){
+    background-color: lighten($color-pink, $i * 5%);
+    color: lighten($color-black, $i * 5%);
+  }
+}
+
+/*.success {
+  background-color: $color-green;
+}
+
+.error {
+  background-color: $color-red;
+}
+
+.warning {
+  background-color: $color-orange;
+}*/
+
+/*.messages {
+  padding: 16px;
+}*/
+
+/*.success, .error, .warning {
+  border: 1px solid $color-light-gray;
+  padding: 16px;
+  color: $color-white;
+}*/
