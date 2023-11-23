@@ -7,7 +7,7 @@ import java.util.Scanner;
 
 public class CountingWord {
   public static void main(String[] args) {
-    File file = new File("src/CountingText.txt");
+    File file = new File("Week-1/src/CountingText.txt");
     
     try (Scanner sc = new Scanner(new FileInputStream(file))) {
       Map<String, Integer> wordCountMap = new HashMap<>();
