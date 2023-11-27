@@ -27,7 +27,3 @@ bin/
 
 ### Mac OS ###
 .DS_Store
-
-### TXTFiles ###
-src/daily_report.txt
-src/monthly_report.txt

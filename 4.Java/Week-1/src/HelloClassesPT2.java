@@ -1,44 +1,106 @@
 import java.io.*;
 import java.util.*;
 
+class Hospital {
+  private String date;
+  private String doctor;
+  private String patient;
+  private String visitor;
+  
+  public Hospital(String date, String doctor, String patient, String visitor) {
+    this.date = date;
+    this.doctor = doctor;
+    this.patient = patient;
+    this.visitor = visitor;
+  }
+  
+  public String getDate() {
+    return date;
+  }
+  
+  public String getDoctor() {
+    return doctor;
+  }
+  
+  public String getPatient() {
+    return patient;
+  }
+  
+  public String getVisitor() {
+    return visitor;
+  }
+}
+
+class DailyReport {
+  private List<Hospital> hospitalList;
+  
+  public DailyReport(List<Hospital> hospitalList) {
+    this.hospitalList = hospitalList;
+  }
+  
+  public void generateReport() throws IOException {
+    Collections.sort(hospitalList, Comparator.comparing(Hospital::getDate));
+    
+    File dailyReport = new File("src/daily_report.txt");
+    FileWriter dailyWriter = new FileWriter(dailyReport);
+    
+    System.out.println("Date, Doctor, Patient, Visitor");
+    dailyWriter.write("Date, Doctor, Patient, Visitor\n");
+    
+    for (Hospital h : hospitalList) {
+      System.out.println(h.getDate() + ", " + h.getDoctor() + ", " + h.getPatient() + ", " + h.getVisitor());
+      dailyWriter.write(h.getDate() + ", " + h.getDoctor() + ", " + h.getPatient() + ", " + h.getVisitor() + "\n");
+    }
+    
+    dailyWriter.close();
+  }
+}
+
+class MonthlyReport {
+  private List<Hospital> hospitalList;
+  
+  public MonthlyReport(List<Hospital> hospitalList) {
+    this.hospitalList = hospitalList;
+  }
+  
+  public void generateReport() throws IOException {
+    Collections.sort(hospitalList, Comparator.comparing(Hospital::getDate));
+    
+    File monthlyReport = new File("src/monthly_report.txt");
+    FileWriter monthlyWriter = new FileWriter(monthlyReport);
+    
+    System.out.println("Date, Doctor, Patient, Visitor");
+    monthlyWriter.write("Date, Doctor, Patient, Visitor\n");
+    
+    for (Hospital h : hospitalList) {
+      System.out.println(h.getDate() + ", " + h.getDoctor() + ", " + h.getPatient() + ", " + h.getVisitor());
+      monthlyWriter.write(h.getDate() + ", " + h.getDoctor() + ", " + h.getPatient() + ", " + h.getVisitor() + "\n");
+    }
+    
+    monthlyWriter.close();
+  }
+}
+
 public class HelloClassesPT2 {
   
   public static void main(String[] args) throws IOException {
-    List<hospital> hospitalList = new ArrayList<hospital>();
-    // read the file
+    List<Hospital> hospitalList = new ArrayList<>();
+    
     BufferedReader reader = new BufferedReader(new FileReader("src/hospital.csv"));
     String line = reader.readLine();
+    
     while (line != null) {
       String[] attributes = line.split(",");
-      hospitalList.add(new hospital(attributes[0], attributes[1], attributes[2], attributes[3]));
+      hospitalList.add(new Hospital(attributes[0], attributes[1], attributes[2], attributes[3]));
       line = reader.readLine();
     }
+    
     reader.close();
-    // sort the list by date
-    Collections.sort(hospitalList, new Comparator<hospital>() {
-      @Override
-      public int compare(hospital h1, hospital h2) {
-        return h1.getDate().compareTo(h2.getDate());
-      }
-    });
-    // create a file called "daily_report.txt"
-    File dailyReport = new File("src/daily_report.txt");
-    // create a file called "monthly_report.txt"
-    File monthlyReport = new File("src/monthly_report.txt");
-    // write the report to the file
-    FileWriter dailyWriter = new FileWriter(dailyReport);
-    FileWriter monthlyWriter = new FileWriter(monthlyReport);
-    // print the report to the console
-    System.out.println("Date, Doctor, Patient, Visitor");
-    dailyWriter.write("Date, Doctor, Patient, Visitor\n");
-    monthlyWriter.write("Date, Doctor, Patient, Visitor\n");
-    for (hospital h : hospitalList) {
-      System.out.println(h.getDate() + ", " + h.getDoctor() + ", " + h.getPatient() + ", " + h.getVisitor());
-      dailyWriter.write(h.getDate() + ", " + h.getDoctor() + ", " + h.getPatient() + ", " + h.getVisitor() + "\n");
-      monthlyWriter.write(h.getDate() + ", " + h.getDoctor() + ", " + h.getPatient() + ", " + h.getVisitor() + "\n");
-    }
-    // close the file
-    dailyWriter.close();
-    monthlyWriter.close();
+    
+    DailyReport dailyReport = new DailyReport(hospitalList);
+    dailyReport.generateReport();
+    
+    MonthlyReport monthlyReport = new MonthlyReport(hospitalList);
+    monthlyReport.generateReport();
   }
 }
