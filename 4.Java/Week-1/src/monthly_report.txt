@@ -1,0 +1,6 @@
+Date, Doctor, Patient, Visitor
+1/1/1111,  Michel,  David,  John
+1/1/1111,  Michel,  John,  Johnny
+1/1/1111,  Michel,  Smith,  Max
+1/1/1111,  Michel,  David,  Luigi
+Date,  Doctor,  Patients,  Visitor
