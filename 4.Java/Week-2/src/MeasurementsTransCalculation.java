@@ -13,6 +13,7 @@ public class MeasurementsTransCalculation {
     String metric = li.getSelectedValue();
     
     try {
+      
       double length = Double.parseDouble(askLength);
       double width = Double.parseDouble(askWidth);
       
