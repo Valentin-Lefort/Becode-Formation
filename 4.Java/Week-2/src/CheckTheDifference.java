@@ -11,8 +11,8 @@ public class CheckTheDifference {
   {
     HashMap<String, Long> values2019 = mapping("/2019");
     HashMap<String, Long> values2020 = mapping("/2020");
-    System.out.println(values2019);
-    System.out.println(values2020);
+    System.out.println("2019 : " + values2019);
+    System.out.println("2020 : " + values2020);
   }
   static HashMap<String, Long> mapping(String Year) {
     HashMap<String, Long> values;
