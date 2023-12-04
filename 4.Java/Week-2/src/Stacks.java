@@ -27,3 +27,5 @@ public class Stacks
     
   }
 }
+
+String Six = int 6
