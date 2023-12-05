@@ -5,8 +5,7 @@ public class Main {
     
     CommandLineHandler cmdHandler = new CommandLineHandler();
     Scanner sc = new Scanner(System.in);
-    // Load CSV
-    System.out.println("Enter the CSV Path : ");
+    System.out.println("List of commands :\n overview\n yAvg\n yTotal\n mAvg\n mTotal\n help (yAvg, yTotal, mAvg, mTotal, overview)");
     String filePath = sc.nextLine();
     cmdHandler.handleCommand(filePath);
   }

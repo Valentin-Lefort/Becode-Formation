@@ -1,30 +1,65 @@
+import java.util.Objects;
+import java.util.Scanner;
+
 public class CommandLineHandler {
-  public void handleCommand(String command) {
+  Scanner sc1 = new Scanner(System.in);
+  UniqueValue uv = new UniqueValue();
+  public void handleCommand(String input) {
+    String[] s = input.split(" ");
+    String command = s[0];
       switch (command) {
         case "overview":
           displayOverview();
           break;
-        case "yearly_average":
+        case "yAvg":
           displayYearlyAvg();
           break;
-        case "yearly_total":
+        case "yTotal":
           displayYearlyTotal();
           break;
-        case "monthly_average":
+        case "mAvg":
           displayMonthlyAvg();
           break;
-        case "monthly_total":
+        case "mTotal":
           displayMonthlyTotal();
           break;
         case "help":
-          displayHelp();
+          if (s.length > 1){
+            displayState(s[1]);
+          } else {
+            displayHelp();
+          }
           break;
         default:
-          System.out.println("Default Case");
+          System.out.println("Type help to see the command list");
       }
   }
-  private void displayHelp(){
-    System.out.println("Help Case ");
+  public void displayHelp(){
+    System.out.println("""
+            There is a list for help command you can use :\s
+             - yAvg\s
+             - yTotal\s
+             - mAvg\s
+             - mTotal\s
+             - overview\s
+             - -l to leave the help menu""");
+    String scName = sc1.next();
+    displayState(scName);
+  }
+  private void displayState(String scName){
+    if (Objects.equals(scName, "yAvg")){
+      System.out.println("Provides an overview of all the monthly averages for a particular year, for both import and export. Then it gives the yearly average for both import and export.");
+    } else if (Objects.equals(scName, "yTotal")) {
+      System.out.println("Provides an overview of all the monthly totals for a particular year. This command returns the total of each month for both import and export and then gives the yearly total for both import and export.");
+    } else if (Objects.equals(scName, "mAvg")) {
+      System.out.println("Returns the average of both the export and import of a specified month of a specified year.");
+    } else if (Objects.equals(scName, "mTotal")) {
+      System.out.println("Returns the sum of both the export and import for a specified month of a specified year.");
+    } else if (Objects.equals(scName, "-l")) {
+//      System.out.println("You leave the help menu");
+    } else {
+      displayHelp();
+    }
   }
   private void displayMonthlyTotal(){
     System.out.println("Monthly Total : ");
@@ -39,6 +74,6 @@ public class CommandLineHandler {
     System.out.println("Yearly Average : ");
   }
   private void displayOverview(){
-    System.out.println("Overview : ");
+    uv.uniqueValue();
   }
 }
