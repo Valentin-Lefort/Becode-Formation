@@ -8,5 +8,6 @@ public class Main {
     // Load CSV
     System.out.println("Enter the CSV Path : ");
     String filePath = sc.nextLine();
+    cmdHandler.handleCommand(filePath);
   }
 }

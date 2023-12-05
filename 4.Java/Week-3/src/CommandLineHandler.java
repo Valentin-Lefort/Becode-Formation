@@ -1,7 +1,5 @@
 public class CommandLineHandler {
-  public void handleCommand(String[] args) {
-    if (args.length > 0) {
-      String command = args[0];
+  public void handleCommand(String command) {
       switch (command) {
         case "overview":
           displayOverview();
@@ -21,10 +19,9 @@ public class CommandLineHandler {
         case "help":
           displayHelp();
           break;
+        default:
+          System.out.println("Default Case");
       }
-    }  else {
-      System.out.println("Else Statement");
-    }
   }
   private void displayHelp(){
     System.out.println("Help Case ");

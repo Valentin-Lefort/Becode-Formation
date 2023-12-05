@@ -4,15 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d4d81333-980c-4921-ab7f-f6875df2ade0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Week-3.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/CSVAnalyzer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/CommandLineHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/covid_and_trade.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Week-2/src/Stacks.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Week-2/src/Stacks.java" afterDir="false" />
+    <list default="true" id="d4d81333-980c-4921-ab7f-f6875df2ade0" name="Changes" comment="Week 3 Beginning">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CommandLineHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CommandLineHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,11 +72,24 @@
       <option name="presentableId" value="Default" />
       <updated>1701680032725</updated>
       <workItem from="1701680033768" duration="4309000" />
-      <workItem from="1701699993580" duration="2148000" />
+      <workItem from="1701699993580" duration="4734000" />
     </task>
+    <task id="LOCAL-00001" summary="Week 3 Beginning">
+      <option name="closed" value="true" />
+      <created>1701702379438</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1701702379438</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Week 3 Beginning" />
+    <option name="LAST_COMMIT_MESSAGE" value="Week 3 Beginning" />
   </component>
 </project>
