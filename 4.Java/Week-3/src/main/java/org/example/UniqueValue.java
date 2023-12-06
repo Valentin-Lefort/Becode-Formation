@@ -8,7 +8,7 @@ import java.util.stream.Stream;
 
 public class UniqueValue {
   public void uniqueValue(){
-    String fileName = "src/covid_and_trade.csv";
+    String fileName = "src/main/java/org/example/covid_and_trade.csv";
     try (Stream<String> lines = Files.lines(Paths.get(fileName))) {
       List<List<String>> values = lines.map(line -> Arrays.asList(line.split(","))).toList();
       values.forEach(System.out::println);

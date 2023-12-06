@@ -22,7 +22,8 @@ public class CommandLineHandler {
           displayYearlyTotal();
           break;
         case "mAvg":
-          displayMonthlyAvg();
+//          displayMonthlyAvg();
+          displayQuery("All");
           break;
         case "mTotal":
           displayMonthlyTotal();
@@ -70,9 +71,9 @@ public class CommandLineHandler {
   private void displayMonthlyTotal(){
     System.out.println("Monthly Total : ");
   }
-  private void displayMonthlyAvg() throws IOException {
-    displayQuery(null);
-  }
+//  private void displayMonthlyAvg() throws IOException {
+//    displayQuery(null);
+//  }
   private void displayYearlyTotal(){
     System.out.println("Yearly Total : ");
   }

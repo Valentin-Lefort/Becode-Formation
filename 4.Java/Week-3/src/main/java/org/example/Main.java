@@ -8,10 +8,6 @@ public class Main {
     
     CommandLineHandler cmdHandler = new CommandLineHandler();
     
-    
-    
-    System.out.println(2 + 4 * 5 - 10 / (2 + 1));
-    
     CSVAnalyzer csvHandler = new CSVAnalyzer();
     csvHandler.csvAnalyzer("All", "All", "All","$");
     
