@@ -28,4 +28,4 @@ public class Stacks
   }
 }
 
-String Six = int 6
+//String Six = int 6
