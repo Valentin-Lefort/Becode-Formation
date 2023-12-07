@@ -2,5 +2,13 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$/../.." vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../../1.HTML-CSS/01-CSS/website-berners-lee" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../../1.HTML-CSS/02-kabibi-food" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../../1.HTML-CSS/04-sunnyside-agency" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../../1.HTML-CSS/responsive-exo" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../../3.PHP/AZ_Store" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../../3.PHP/PHP-fundamentals" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../../3.PHP/hackers-poulette" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../../Projet-perso" vcs="Git" />
   </component>
 </project>

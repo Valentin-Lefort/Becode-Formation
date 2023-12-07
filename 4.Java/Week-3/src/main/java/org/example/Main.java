@@ -8,9 +8,6 @@ public class Main {
     
     CommandLineHandler cmdHandler = new CommandLineHandler();
     
-    CSVAnalyzer csvHandler = new CSVAnalyzer();
-    csvHandler.csvAnalyzer("All", "All", "All","$");
-    
     Scanner sc = new Scanner(System.in);
     System.out.println("List of commands :\n overview\n yAvg\n yTotal\n mAvg\n mTotal\n help (yAvg, yTotal, mAvg, mTotal, overview)");
     String filePath = sc.nextLine();
