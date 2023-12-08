@@ -41,7 +41,7 @@ public class CSVAnalyzer {
       
       double average = calculateAverage(values);
       
-      if ("printCommand".equals(command)) {
+      if ("mAvg".equals(command)) {
         System.out.println("Country: " + country);
         System.out.println("Commodity: " + commodity);
         System.out.println("Transport Node: " + transportNode);

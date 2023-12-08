@@ -6,8 +6,11 @@ import java.util.Scanner;
 
 public class CommandLineHandler {
   Scanner sc1 = new Scanner(System.in);
+  TotalForYear ty = new TotalForYear();
   UniqueValue uv = new UniqueValue();
   CSVAnalyzer csvAnalyzer = new CSVAnalyzer();
+  private String input;
+
   public void handleCommand(String input) throws IOException {
     String[] s = input.split(" -");
     String command = s[0];
@@ -22,13 +25,14 @@ public class CommandLineHandler {
         displayYearlyTotal();
         break;
       case "mAvg":
-        String country = s.length > 1 ? s[1] : "All";
-        String month = s.length > 2 ? s[2] : "";
-        String year = s.length > 3 ? s[3] : "";
-        csvAnalyzer.csvAnalyzer("printCommand", country, "All", "All", "$", year, month);
+        displayMAVG();
         break;
       case "mTotal":
-        displayMonthlyTotal();
+        String year = s.length > 1 ? s[1] : "";
+        long total = ty.calculateTotalForYear(year);
+        System.out.println("Year: " + year);
+        System.out.println("Monthly Total : " + total);
+//        displayMonthlyTotal();
         break;
       case "help":
         if (s.length > 1) displayState(s[1]);
@@ -66,8 +70,17 @@ public class CommandLineHandler {
     }
   }
   
-  private void displayMonthlyTotal(){
-    System.out.println("Monthly Total : ");
+  private void displayMAVG() throws IOException {
+    String[] s = input.split(" ");
+//    String command = s[0];
+    String country = s.length > 1 ? s[1] : "All";
+    String month = s.length > 2 ? s[2] : "";
+    String year = s.length > 3 ? s[3] : "";
+    csvAnalyzer.csvAnalyzer("mAvg", country, "All", "All", "$", year, month);
+  }
+  
+  private void displayMonthlyTotal() throws IOException {
+
   }
   private void displayYearlyTotal(){
     System.out.println("Yearly Total : ");
