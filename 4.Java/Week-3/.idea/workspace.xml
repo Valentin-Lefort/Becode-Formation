@@ -5,10 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1f70c013-376e-4c03-b9d1-e57452d74b68" name="Changes" comment="Add maven">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/TotalForYear.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/CSVAnalyzer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/CSVAnalyzer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/CommandLineHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/CommandLineHandler.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -106,7 +103,9 @@
       <workItem from="1701858002608" duration="5613000" />
       <workItem from="1701936815209" duration="747000" />
       <workItem from="1701938052864" duration="18422000" />
-      <workItem from="1702023367638" duration="4335000" />
+      <workItem from="1702023367638" duration="5592000" />
+      <workItem from="1702048723965" duration="256000" />
+      <workItem from="1702282977361" duration="23000" />
     </task>
     <task id="LOCAL-00001" summary="Add maven">
       <option name="closed" value="true" />
