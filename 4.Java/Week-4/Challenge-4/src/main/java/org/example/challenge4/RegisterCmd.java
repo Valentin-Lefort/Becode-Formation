@@ -36,6 +36,7 @@ public class RegisterCmd implements Command {
     String answer = sc.nextLine();
     if (answer.equals("doctor") || answer.equals("dr")){
       theDoctor();
+      report.setRegister(this);
       return;
     }
     if (answer.equals("patient")){
@@ -48,13 +49,11 @@ public class RegisterCmd implements Command {
     }
   }
   private void theDoctor(){
-    Scanner sc = new Scanner(System.in);
-    System.out.println("Enter your name, Doctor : ");
-    this.doctor = sc.nextLine();
+    this.doctor = this.lastName;
   }
   private void thePatient(){
     Scanner sc = new Scanner(System.in);
-    System.out.println("Enter your name, Patient : ");
-    this.doctor = sc.nextLine();
+    System.out.println("Which Doctor you need : ");
+    this.doctor =  sc.nextLine();
   }
 }

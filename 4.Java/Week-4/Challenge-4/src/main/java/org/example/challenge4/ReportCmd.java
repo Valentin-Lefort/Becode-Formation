@@ -21,7 +21,7 @@ public class ReportCmd implements Command{
   public void display(){
     for (RegisterCmd registerCmd : register) {
       System.out.println("Name : " + registerCmd.lastName + " " + registerCmd.firstName);
-      System.out.println("Doctor : " + registerCmd.doctor);
+      System.out.println("Doctor : " + (registerCmd.doctor == null ? "No doctor" : registerCmd.doctor));
       System.out.println("Time : " + registerCmd.time);
     }
   }
