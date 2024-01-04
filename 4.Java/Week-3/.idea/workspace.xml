@@ -5,6 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1f70c013-376e-4c03-b9d1-e57452d74b68" name="Changes" comment="Add maven">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -106,6 +108,9 @@
       <workItem from="1702023367638" duration="5592000" />
       <workItem from="1702048723965" duration="256000" />
       <workItem from="1702282977361" duration="23000" />
+      <workItem from="1703135872035" duration="15000" />
+      <workItem from="1703251214427" duration="361000" />
+      <workItem from="1703675441602" duration="18000" />
     </task>
     <task id="LOCAL-00001" summary="Add maven">
       <option name="closed" value="true" />
